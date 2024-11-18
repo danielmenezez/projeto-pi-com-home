@@ -80,3 +80,37 @@
 .error-border {
     border-color: #d9534f !important; 
 }
+
+/* Estilo do Modal */
+#fileModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    position: relative;
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+}
+
+#fileInfo {
+    margin-top: 20px;
+}

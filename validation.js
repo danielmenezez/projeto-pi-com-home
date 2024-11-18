@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isValid) {
             alert("Cadastro realizado com sucesso!");
-            form.submit(); 
         }
     });
 
@@ -76,4 +75,49 @@ document.addEventListener("DOMContentLoaded", () => {
         const inputs = document.querySelectorAll(".error-border");
         inputs.forEach((input) => input.classList.remove("error-border"));
     }
+});
+
+document.getElementById('fileInput').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+
+    const fileName = document.getElementById('fileName');  
+    const fileThumbnail = document.getElementById('fileThumbnail');  
+    
+    if (fileName) {
+        fileName.textContent = file.name;
+    }
+
+    if (fileThumbnail) {
+        if (file.type.startsWith('image')) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                fileThumbnail.src = e.target.result;
+                document.getElementById('fileInfo').style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        } else if (file.type === 'application/pdf') {
+            fileThumbnail.src = 'pdf-thumbnail-icon.png';
+            document.getElementById('fileInfo').style.display = 'block';
+        }
+    }
+});
+
+document.getElementById('fileThumbnail').addEventListener('click', function () {
+    const file = document.getElementById('fileInput').files[0];
+    
+    const modal = document.getElementById('fileModal');
+    const modalIframe = document.getElementById('modalIframe');
+
+    if (file.type.startsWith('image')) {
+        modalIframe.src = URL.createObjectURL(file); 
+    } else if (file.type === 'application/pdf') {
+        modalIframe.src = URL.createObjectURL(file); 
+    }
+
+    modal.style.display = 'flex'; 
+});
+
+document.getElementById('closeModal').addEventListener('click', function () {
+    const modal = document.getElementById('fileModal');
+    modal.style.display = 'none';
 });

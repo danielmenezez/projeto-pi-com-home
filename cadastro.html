@@ -10,7 +10,7 @@
     <section id="registerSection" class="form-section">
         <div class="container">
             <h2>Cadastro de Usuário</h2>
-            <form id="registerForm" action="thankyou.html" method="post" enctype="multipart/form-data">
+            <form id="registerForm" method="post" enctype="multipart/form-data">
                 <label for="name">Nome Completo:</label>
                 <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
     
@@ -33,7 +33,22 @@
             </form>
         </div>
     </section>
-    <script src="validation.js"></script>
 
+    <div id="fileInfo" style="display: none;">
+        <h3>Arquivo Enviado:</h3>
+        <div id="fileDetails">
+            <p id="fileName"></p> 
+            <img id="fileThumbnail" src="" alt="Miniatura" style="width: 50px; height: 50px; cursor: pointer;">
+        </div>
+    </div>
+
+    <div id="fileModal" style="display: none;">
+        <div id="modalContent">
+            <span id="closeModal" style="cursor: pointer; font-size: 20px;">&times;</span>
+            <iframe id="modalIframe" style="width: 100%; height: 500px;" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="validation.js"></script>
 </body>
 </html>
