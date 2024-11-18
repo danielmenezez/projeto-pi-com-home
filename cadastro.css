@@ -64,3 +64,13 @@
         padding: 20px;
     }
 }
+
+.error-message {
+    color: #d9534f; 
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.error-border {
+    border-color: #d9534f !important; 
+}
