@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #eef7dd; /* Fundo verde claro */
-    color: #333; /* Texto neutro */
+    background-color: #eef7dd; 
+    color: #333; 
 }
 
 .container {
@@ -17,13 +16,12 @@ body {
     margin: 0 auto;
 }
 
-/* Cabeçalho */
 header {
-    background: #8bbf43; /* Verde escuro */
+    background: #8bbf43; 
     color: white;
     padding: 40px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 header h1 {
@@ -35,9 +33,8 @@ header p {
     font-size: 1.2em;
 }
 
-/* Seção de Serviços */
 .services {
-    background: #f9f9f9; /* Fundo neutro */
+    background: #f9f9f9;
     padding: 40px 0;
 }
 
@@ -45,7 +42,7 @@ header p {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    color: #8bbf43; /* Verde escuro */
+    color: #8bbf43; 
 }
 
 .service-list {
@@ -55,37 +52,35 @@ header p {
 }
 
 .service-item {
-    background: #ffffff; /* Branco */
+    background: #ffffff; 
     padding: 20px;
     border-radius: 8px;
-    border: 2px solid #cde091; /* Borda verde suave */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 2px solid #cde091; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     text-align: center;
 }
 
 .service-item h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #333; /* Texto neutro */
+    color: #333; 
 }
 
 .service-item p {
     font-size: 1em;
-    color: #666; /* Texto secundário */
+    color: #666; 
 }
 
-/* Seção de Área do Cliente */
 .client-area {
-    background: #cde091; /* Verde suave */
+    background: #cde091; 
     padding: 40px 0;
     text-align: center;
-    color: #333; /* Texto neutro */
-}
+    color: #333; 
 
 .client-area h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ffffff; /* Contraste no título */
+    color: #ffffff; 
 }
 
 .client-area p {
@@ -106,18 +101,17 @@ header p {
     text-decoration: none;
     color: white;
     text-align: center;
-    background: #8bbf43; /* Verde escuro */
+    background: #8bbf43;
     border: none;
     transition: background-color 0.3s;
 }
 
 .btn-cadastro:hover, .btn-login:hover {
-    background: #6fa433; /* Hover verde mais escuro */
+    background: #6fa433; 
 }
 
-/* Seção de Por que escolher */
 .why-choose {
-    background: #f9f9f9; /* Fundo neutro */
+    background: #f9f9f9; 
     padding: 40px 0;
 }
 
@@ -125,7 +119,7 @@ header p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.5em;
-    color: #8bbf43; /* Verde escuro */
+    color: #8bbf43; 
 }
 
 .why-choose ul {
@@ -136,12 +130,11 @@ header p {
 .why-choose li {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #666; /* Texto secundário */
+    color: #666; 
 }
 
-/* Seção de Depoimentos */
 .testimonials {
-    background: #ffffff; /* Branco */
+    background: #ffffff; 
     padding: 40px 0;
 }
 
@@ -149,26 +142,25 @@ header p {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    color: #8bbf43; /* Verde escuro */
+    color: #8bbf43;
 }
 
 .testimonial blockquote {
     font-size: 1.2em;
     font-style: italic;
     margin-bottom: 20px;
-    color: #666; /* Texto secundário */
+    color: #666; 
 }
 
 .testimonial cite {
     display: block;
     text-align: right;
     font-weight: bold;
-    color: #333; /* Texto neutro */
+    color: #333; 
 }
 
-/* Seção de Contato */
 .contact {
-    background: #eef7dd; /* Fundo verde claro */
+    background: #eef7dd; 
     padding: 40px 0;
     text-align: center;
 }
@@ -176,17 +168,16 @@ header p {
 .contact h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #8bbf43; /* Verde escuro */
+    color: #8bbf43; 
 }
 
 .contact p {
     font-size: 1.2em;
-    color: #333; /* Texto neutro */
+    color: #333; 
 }
 
-/* Rodapé */
 footer {
-    background: #333; /* Fundo escuro */
+    background: #333; 
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -197,7 +188,7 @@ footer p {
 }
 
 footer a {
-    color: #cde091; /* Verde suave */
+    color: #cde091;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -206,7 +197,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Seção de Tutorial */
 .document-guide {
     background-color: #f9f9f9;
     padding: 40px 20px;
@@ -227,7 +217,6 @@ footer a:hover {
     color: #555;
 }
 
-/* Grid de Categorias */
 .document-grid {
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +225,7 @@ footer a:hover {
 }
 
 .document-item {
-    flex: 1 1 calc(50% - 20px); /* 2 colunas em telas grandes */
+    flex: 1 1 calc(50% - 20px); 
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -266,9 +255,9 @@ footer a:hover {
     font-size: 1em;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .document-item {
-        flex: 1 1 100%; /* 1 coluna em telas menores */
+        flex: 1 1 100%; 
     }
+}
 }
