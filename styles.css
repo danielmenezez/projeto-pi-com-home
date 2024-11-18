@@ -1,0 +1,274 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eef7dd; /* Fundo verde claro */
+    color: #333; /* Texto neutro */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: #8bbf43; /* Verde escuro */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Seção de Serviços */
+.services {
+    background: #f9f9f9; /* Fundo neutro */
+    padding: 40px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #8bbf43; /* Verde escuro */
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-item {
+    background: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #cde091; /* Borda verde suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333; /* Texto neutro */
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666; /* Texto secundário */
+}
+
+/* Seção de Área do Cliente */
+.client-area {
+    background: #cde091; /* Verde suave */
+    padding: 40px 0;
+    text-align: center;
+    color: #333; /* Texto neutro */
+}
+
+.client-area h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Contraste no título */
+}
+
+.client-area p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-cadastro, .btn-login {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background: #8bbf43; /* Verde escuro */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastro:hover, .btn-login:hover {
+    background: #6fa433; /* Hover verde mais escuro */
+}
+
+/* Seção de Por que escolher */
+.why-choose {
+    background: #f9f9f9; /* Fundo neutro */
+    padding: 40px 0;
+}
+
+.why-choose h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #8bbf43; /* Verde escuro */
+}
+
+.why-choose ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.why-choose li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #666; /* Texto secundário */
+}
+
+/* Seção de Depoimentos */
+.testimonials {
+    background: #ffffff; /* Branco */
+    padding: 40px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #8bbf43; /* Verde escuro */
+}
+
+.testimonial blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #666; /* Texto secundário */
+}
+
+.testimonial cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #333; /* Texto neutro */
+}
+
+/* Seção de Contato */
+.contact {
+    background: #eef7dd; /* Fundo verde claro */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8bbf43; /* Verde escuro */
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #333; /* Texto neutro */
+}
+
+/* Rodapé */
+footer {
+    background: #333; /* Fundo escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #cde091; /* Verde suave */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Tutorial */
+.document-guide {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-top: 2px solid #cde091;
+}
+
+.document-guide h2 {
+    color: #8bbf43;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.document-guide p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Grid de Categorias */
+.document-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.document-item {
+    flex: 1 1 calc(50% - 20px); /* 2 colunas em telas grandes */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #cde091;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.document-item h3 {
+    color: #8bbf43;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.document-item ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.document-item ul ul {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.document-item ul li {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .document-item {
+        flex: 1 1 100%; /* 1 coluna em telas menores */
+    }
+}
