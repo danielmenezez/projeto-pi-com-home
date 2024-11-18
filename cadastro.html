@@ -25,9 +25,19 @@
     
                 <label for="address">Endereço:</label>
                 <input type="text" id="address" name="address" placeholder="Digite seu endereço" required>
-    
-                <label for="fileInput">Envie seu Documento:</label>
-                <input type="file" id="fileInput" name="fileInput" accept=".pdf, image/*" required>
+
+                <label for="service">Escolha o serviço:</label>
+                <select id="service" name="service" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="onboarding">Onboarding Contábil</option>
+                    <option value="impostoRenda">Imposto de Renda</option>
+                    <option value="inconsistenciasContabeis">Inconsistências Contábeis</option>
+                </select>
+
+                <div id="fileUploadSection" style="display: none;">
+                    <label for="fileInput">Envie seu Documento:</label>
+                    <input type="file" id="fileInput" name="fileInput" accept=".pdf, image/*" required>
+                </div>
     
                 <button type="submit" class="btn-submit">Cadastrar</button>
             </form>
@@ -50,5 +60,6 @@
     </div>
 
     <script src="validation.js"></script>
+
 </body>
 </html>

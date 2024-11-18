@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("registerForm");
 
+    const serviceSelect = document.getElementById('service'); // Captura o campo de seleção de serviço
+    const fileUploadSection = document.getElementById('fileUploadSection'); // Captura a seção de envio de arquivo
+
+    // Mostrar ou esconder a seção de upload de arquivo com base na seleção do serviço
+    serviceSelect.addEventListener('change', function() {
+        if (this.value !== "") {
+            fileUploadSection.style.display = 'block'; // Exibe a seção de upload de arquivo
+        } else {
+            fileUploadSection.style.display = 'none'; // Esconde a seção de upload de arquivo
+        }
+    });
+
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -10,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const city = document.getElementById("city");
         const address = document.getElementById("address");
         const fileInput = document.getElementById("fileInput");
+        const service = serviceSelect.value; // Valor do serviço selecionado
 
         clearErrors();
 
@@ -37,6 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (address.value.trim() === "") {
             showError(address, "Por favor, insira seu endereço.");
+            isValid = false;
+        }
+
+        if (service === "") {
+            showError(serviceSelect, "Por favor, selecione um serviço.");
             isValid = false;
         }
 
