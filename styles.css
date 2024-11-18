@@ -49,6 +49,7 @@ header p {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; /* Permite o ajuste em telas menores */
 }
 
 .service-item {
@@ -58,6 +59,7 @@ header p {
     border: 2px solid #cde091; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     text-align: center;
+    flex: 1 1 calc(25% - 20px); /* Ajuste para 4 itens por linha */
 }
 
 .service-item h3 {
@@ -76,6 +78,7 @@ header p {
     padding: 40px 0;
     text-align: center;
     color: #333; 
+}
 
 .client-area h2 {
     font-size: 2.5em;
@@ -256,8 +259,19 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    .document-item {
-        flex: 1 1 100%; 
+    .service-item {
+        flex: 1 1 calc(50% - 20px); /* Ajuste para 2 itens por linha em telas menores */
     }
-}
+
+    .document-item {
+        flex: 1 1 100%; /* Ajuste para 1 item por linha em telas menores */
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
 }
