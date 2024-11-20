@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding Contábil</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+    <section class="document-guide">
+        <div class="container">
+            <h2>Guia de Envio de Documentos</h2>
+            <p>Siga as instruções abaixo para enviar sua documentação corretamente:</p>
+
+            <div class="document-grid">
+                <div class="document-item">
+                    <h3>1. Documentos Pessoais</h3>
+                    <ul>
+                        <li>CPF e RG.</li>
+                        <li>Título de eleitor.</li>
+                        <li>Comprovante de residência atualizado.</li>
+                        <li>Dados bancários: informações da conta para eventual restituição.</li>
+                        <li>Número do recibo da última declaração de Imposto de Renda (se houver).</li>
+                    </ul>
+                </div>
+                <div class="document-item">
+                    <h3>2. Documentos dos Dependentes</h3>
+                    <ul>
+                        <li>Nome completo e CPF de cada dependente.</li>
+                        <li>Data de nascimento.</li>
+                        <li>Comprovantes de relação de dependência: certidões de nascimento, casamento ou documentos de guarda judicial.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <h2>Formulário de Registro</h2>
+            <form id="registerForm" method="post" enctype="multipart/form-data">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+
+                <label for="city">Cidade:</label>
+                <input type="text" id="city" name="city" placeholder="Digite sua cidade" required>
+
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address" placeholder="Digite seu endereço" required>
+
+                <label for="fileInput">Envie seu Documento:</label>
+                <input type="file" id="fileInput" name="fileInput" accept=".pdf, image/*" required>
+
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
